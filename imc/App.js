@@ -12,14 +12,13 @@ export default function App() {
       return false
     }
     if (height <= 0) {
-      Alert.alert('Opa!', 'Infome uma altura maior que 0 (zero).')
+      Alert.alert('Opa!', 'Informe uma altura maior que 0 (zero).')
       return false
     }
     return true
   }
 
   function calculate() {
-
     if (validate()) {
       let imc = weight / (height * height)
       let classification = ''
